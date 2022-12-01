@@ -1,0 +1,24 @@
+<sly data-sly-use.model="com.mywebsite.core.models.PagePathsModel">
+        <sly data-sly-use.clientlibs="/libs/granite/sightly/templates/clientlib.html"
+             data-sly-call="${clientlibs.all @categories='mywebsite.project'}"></sly>
+    <div data-sly-set.x="${model.path1}"></div>
+    <div data-sly-set.y="${model.path2}"></div>
+
+    <body class="container">
+            <form method="post" enctype="multipart/form-data" action="/bin/submitdata">
+                <label>Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label>Phone Number:</label>
+                <input type="text" id="phoneNo" name="phoneNo"><br><br>
+                <label>Age:</label>
+                <input type="text" id="age" name="age"><br><br>
+                <label>DateOfBirth:</label>
+                <input type="text" id="dob" name="dob"><br><br>
+                <button class="btn" type="submit" name="button">Submit</button>
+            </form>
+    <script>
+
+    </script>
+    </body>
+
+</sly>
