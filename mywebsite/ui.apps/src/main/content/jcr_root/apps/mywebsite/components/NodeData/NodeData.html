@@ -1,0 +1,37 @@
+<sly data-sly-use.model="com.mywebsite.core.models.NodeDataModel">
+        <sly data-sly-use.clientlibs="/libs/granite/sightly/templates/clientlib.html"
+             data-sly-call="${clientlibs.all @categories='mywebsite.project'}"></sly>
+        <table border="2px solid-black">
+                <tr>
+                        <td>Name of Node:</td>
+                        <td>${model.name}</td>
+                </tr>
+
+                <tr>
+                        <td>Path:</td>
+                        <td>${model.path}</td>
+                </tr>
+
+                <tr>
+                        <td>Name:</td>
+                        <td>${model.title}</td>
+                </tr>
+
+                <tr>
+                        <td>Date Of Birth:</td>
+                        <td>${model.dob}</td>
+                </tr>
+
+                <tr>
+                        <td>Age:</td>
+                        <td>${model.age}</td>
+                </tr>
+
+                <tr>
+                        <td>Mobile No:</td>
+                        <td>${model.phoneNo}</td>
+                </tr>
+
+
+        </table>
+</sly>

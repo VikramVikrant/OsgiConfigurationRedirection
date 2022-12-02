@@ -41,11 +41,9 @@ public class FormNodeServlet extends SlingAllMethodsServlet{
             resourceResolver.commit();
         }
 
-        catch (RepositoryException e) {
+        catch (RepositoryException | PersistenceException e) {
             e.printStackTrace();
 
-        } catch (PersistenceException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -56,6 +54,8 @@ public class FormNodeServlet extends SlingAllMethodsServlet{
         String var= request.getParameter(s);
         return var;
     }
+
+
 
 //    public static String getNodeName(SlingHttpServletRequest request)
 //    {
