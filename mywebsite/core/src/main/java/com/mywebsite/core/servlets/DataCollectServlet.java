@@ -37,14 +37,14 @@ public class DataCollectServlet extends SlingAllMethodsServlet {
             Node newNode = node.addNode(getNodeName(req,"NodeModel"), "nt:unstructured");
 
 //            newNode.setProperty("name", "Demo NodeModel");
-            newNode.setProperty("name", getRequestParameter(req,"name"));
+            newNode.setProperty("Fullname", getRequestParameter(req,"Fullname"));
 
             newNode.setProperty("age",getRequestParameter(req,"age"));
             newNode.setProperty("phoneNo",getRequestParameter(req,"phoneNo"));
             newNode.setProperty("dob",getRequestParameter(req,"dob"));
 
 //            resp.getWriter().write("Form submitted");
-            resp.sendRedirect("/content/mywebsite/us/en/form.html");
+            resp.sendRedirect("/content/mywebsite/us/en/newform.html");
             resourceResolver.commit();
 
         } catch (RepositoryException e) {

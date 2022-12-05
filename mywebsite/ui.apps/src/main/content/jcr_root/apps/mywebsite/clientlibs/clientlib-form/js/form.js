@@ -7,7 +7,7 @@ $(document).ready(function(){
                     cache: false,
                     mimeType: 'text/html',
                     success: function (data) {
-                  window.location.href="/content/mywebsite/us/en/check.html";
+                  window.location.href="/content/mywebsite/us/en/newform.html";
                     },
                     error: function (xhr, status, err) {
                          window.location.href="/content/mywebsite/us/en/Success.html";

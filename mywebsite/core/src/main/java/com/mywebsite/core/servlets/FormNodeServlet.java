@@ -33,7 +33,7 @@ public class FormNodeServlet extends SlingAllMethodsServlet{
             Resource resource = resourceResolver.getResource("/content");
             Node node = resource.adaptTo(Node.class);
             Node newNode = node.addNode("dataNode1", "nt:unstructured");
-            newNode.setProperty("name", getRequestParameter(request,"name"));
+            newNode.setProperty("Fullname", getRequestParameter(request,"Fullname"));
             newNode.setProperty("phoneNo", getRequestParameter(request,"phoneNo"));
             newNode.setProperty("age",getRequestParameter(request,"age"));
             newNode.setProperty("dob",getRequestParameter(request,"dob"));

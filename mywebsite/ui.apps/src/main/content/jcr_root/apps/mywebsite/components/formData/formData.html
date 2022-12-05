@@ -1,10 +1,8 @@
 <sly data-sly-use.model="com.mywebsite.core.models.CollectDataModel">
         <sly data-sly-use.clientlibs="/libs/granite/sightly/templates/clientlib.html"
-             data-sly-call="${clientlibs.all @categories='mywebsite.project'}"></sly>
-<!--    <div data-sly-set.x="${model.path1}"></div>-->
-<!--    <div data-sly-set.y="${model.path2}"></div>-->
+             data-sly-call="${clientlibs.all @categories='mywebsite.form'}"></sly>
     <body class="container">
-            <form method="post"   action="/bin/submitdata">
+            <form method="post"   action="/bin/submitdata3">
                 <label>Name:</label>
                 <input type="text" id="name" name="Fullname"><br><br>
                 <label>Phone Number:</label>
